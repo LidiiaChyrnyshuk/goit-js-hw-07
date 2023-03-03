@@ -50,4 +50,4 @@ function handleImageClick(event) {
 			instance.close();
 		}
 	});
-}
+};
