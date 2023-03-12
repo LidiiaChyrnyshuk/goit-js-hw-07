@@ -48,6 +48,10 @@ function handleImageClick(event) {
 
 		if (isEscKey) {
 			instance.close();
+			galleryContainerEl.removeEventListener("keydown", (event) => {
+				const ESC_KEY_CODE = "Escape";
+				const isEscKey = event.code === ESC_KEY_CODE;
+			})
 		}
 	});
 };
